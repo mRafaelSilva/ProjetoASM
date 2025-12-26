@@ -1,0 +1,44 @@
+{
+  "cursos": [
+    {
+      "codigo": "ASM101",
+      "nome": "Arquitetura de Sistemas Multiagente",
+      "creditos": 6,
+      "horario": "Segunda 14:00-16:00, Quarta 14:00-16:00",
+      "vagas": 30,
+      "prerequisitos": []
+    },
+    {
+      "codigo": "IA201",
+      "nome": "Inteligência Artificial",
+      "creditos": 6,
+      "horario": "Terça 10:00-12:00, Quinta 10:00-12:00",
+      "vagas": 25,
+      "prerequisitos": ["ASM101"]
+    },
+    {
+      "codigo": "BD101",
+      "nome": "Bases de Dados",
+      "creditos": 6,
+      "horario": "Segunda 14:00-16:00, Sexta 9:00-11:00",
+      "vagas": 35,
+      "prerequisitos": []
+    },
+    {
+      "codigo": "POO202",
+      "nome": "Programação Orientada a Objetos",
+      "creditos": 6,
+      "horario": "Terça 10:00-12:00, Quinta 14:00-16:00",
+      "vagas": 30,
+      "prerequisitos": []
+    },
+    {
+      "codigo": "RC301",
+      "nome": "Redes de Computadores",
+      "creditos": 6,
+      "horario": "Quarta 9:00-11:00, Sexta 14:00-16:00",
+      "vagas": 20,
+      "prerequisitos": ["BD101"]
+    }
+  ]
+}
