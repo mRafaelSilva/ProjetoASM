@@ -1,0 +1,50 @@
+{
+  "estatutos": [
+    {
+      "tipo": "estudante-trabalhador",
+      "requisitos": [
+        "Contrato de trabalho válido",
+        "Declaração da entidade empregadora"
+      ],
+      "beneficios": [
+        "Horário flexível",
+        "Prioridade em inscrições noturnas",
+        "Regime de avaliação contínua adaptado"
+      ]
+    },
+    {
+      "tipo": "atleta",
+      "requisitos": [
+        "Declaração da federação desportiva",
+        "Calendário de competições"
+      ],
+      "beneficios": [
+        "Tolerância de faltas",
+        "Adiamento de avaliações em caso de competição",
+        "Acesso a época especial de exames"
+      ]
+    },
+    {
+      "tipo": "dirigente-associativo",
+      "requisitos": [
+        "Comprovativo de cargo em associação estudantil"
+      ],
+      "beneficios": [
+        "Tolerância de 10% de faltas adicionais",
+        "Flexibilidade em prazos de entrega"
+      ]
+    },
+    {
+      "tipo": "necessidades-especiais",
+      "requisitos": [
+        "Atestado médico",
+        "Relatório de avaliação"
+      ],
+      "beneficios": [
+        "Adaptações nos espaços físicos",
+        "Materiais em formatos acessíveis",
+        "Tempo adicional em avaliações"
+      ]
+    }
+  ]
+}

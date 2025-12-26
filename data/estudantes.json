@@ -1,0 +1,34 @@
+{
+  "estudantes": [
+    {
+      "id": "20230001",
+      "nome": "João Silva",
+      "curso": "Engenharia Informática",
+      "ano": 2,
+      "disciplinas_completas": ["ASM101"],
+      "disciplinas_inscritas": [],
+      "estatuto": null,
+      "propinas_em_atraso": false
+    },
+    {
+      "id": "20230002",
+      "nome": "Maria Santos",
+      "curso": "Engenharia Informática",
+      "ano": 1,
+      "disciplinas_completas": [],
+      "disciplinas_inscritas": [],
+      "estatuto": "estudante-trabalhador",
+      "propinas_em_atraso": true
+    },
+    {
+      "id": "20230003",
+      "nome": "Pedro Costa",
+      "curso": "Engenharia Informática",
+      "ano": 3,
+      "disciplinas_completas": ["ASM101", "BD101"],
+      "disciplinas_inscritas": [],
+      "estatuto": "atleta",
+      "propinas_em_atraso": false
+    }
+  ]
+}
