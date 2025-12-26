@@ -5,6 +5,7 @@ limites de créditos, e processa equivalências.
 """
 
 import json
+import os
 from spade.agent import Agent
 from spade.behaviour import CyclicBehaviour
 from spade.message import Message
@@ -20,10 +21,12 @@ class AcademicoBehaviour(CyclicBehaviour):
     async def carregar_dados(self):
         """Carrega dados de cursos e estudantes"""
         try:
-            with open('/home/runner/work/ProjetoASM/ProjetoASM/data/cursos.json', 'r', encoding='utf-8') as f:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            
+            with open(os.path.join(base_dir, 'data', 'cursos.json'), 'r', encoding='utf-8') as f:
                 self.cursos_data = json.load(f)
             
-            with open('/home/runner/work/ProjetoASM/ProjetoASM/data/estudantes.json', 'r', encoding='utf-8') as f:
+            with open(os.path.join(base_dir, 'data', 'estudantes.json'), 'r', encoding='utf-8') as f:
                 self.estudantes_data = json.load(f)
             
             print("📚 Dados académicos carregados com sucesso.")

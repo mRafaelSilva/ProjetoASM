@@ -4,6 +4,7 @@ Este agente verifica se o estudante tem propinas em atraso.
 """
 
 import json
+import os
 from spade.agent import Agent
 from spade.behaviour import CyclicBehaviour
 from spade.message import Message
@@ -19,7 +20,9 @@ class FinanceiroBehaviour(CyclicBehaviour):
     async def carregar_dados(self):
         """Carrega dados de estudantes"""
         try:
-            with open('/home/runner/work/ProjetoASM/ProjetoASM/data/estudantes.json', 'r', encoding='utf-8') as f:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            
+            with open(os.path.join(base_dir, 'data', 'estudantes.json'), 'r', encoding='utf-8') as f:
                 self.estudantes_data = json.load(f)
             
             print("💰 Dados financeiros carregados com sucesso.")

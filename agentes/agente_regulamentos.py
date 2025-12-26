@@ -4,6 +4,7 @@ Este agente processa pedidos de estatutos especiais (estudante-trabalhador, atle
 """
 
 import json
+import os
 from spade.agent import Agent
 from spade.behaviour import CyclicBehaviour
 from spade.message import Message
@@ -19,10 +20,12 @@ class RegulamentosBehaviour(CyclicBehaviour):
     async def carregar_dados(self):
         """Carrega dados de estatutos e estudantes"""
         try:
-            with open('/home/runner/work/ProjetoASM/ProjetoASM/data/estatutos.json', 'r', encoding='utf-8') as f:
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            
+            with open(os.path.join(base_dir, 'data', 'estatutos.json'), 'r', encoding='utf-8') as f:
                 self.estatutos_data = json.load(f)
             
-            with open('/home/runner/work/ProjetoASM/ProjetoASM/data/estudantes.json', 'r', encoding='utf-8') as f:
+            with open(os.path.join(base_dir, 'data', 'estudantes.json'), 'r', encoding='utf-8') as f:
                 self.estudantes_data = json.load(f)
             
             print("📜 Dados de regulamentos carregados com sucesso.")
